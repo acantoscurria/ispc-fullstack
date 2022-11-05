@@ -1,0 +1,45 @@
+li>a::after {
+    content: "  |";
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #018fa8, #01073f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #018fa8, #01073f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.texto-borde {
+    -webkit-text-stroke: 0.25px rgb(192, 172, 172);
+    color: transparent; 
+  }
+
+.navbar {
+    background-color: rgb(30, 6, 167);
+}
+
+#menu a {
+    font-size: 90%;
+    font-weight: 550;
+    -webkit-text-stroke: 0.1px rgb(3, 197, 204);
+    color: #ebe9e9;
+}
+
+iconos {
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #da5e5e;
+    padding-top: 20px;
+}

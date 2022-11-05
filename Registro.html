@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <title>High System</title>
 </head>
@@ -42,45 +41,50 @@
         </div>
     </nav>
 
-    <!-- Inicio-->
-    <div class="container-fluid bg-transparent">
+    <!-- Registro-->
+    <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-8">
-                <section class="w-75 mx-auto text-center pt-5" id="intro">
-                    <h1 class="texto-borde p-3 text-primary">High System</h1>
-                    <h3 class="p-3 text-light">"Nos distingue la calidad y eficiencia en distribución de
-                        productos."</h3>
-                    <a class="btn btn-primary mt-4 mb-4 href="Contacto.html" role="button">Contáctanos</a>
-                </section>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <div class="container">
+                    <div id=" titulo-formulario" class="text-center mb-4">
+                        <h2 class="text-light pt-3">Registro</h2>
+                    </div>
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="usuarioregistro" placeholder="Usuario"
+                                required="" minlength="6" maxlength="12" pattern="^[a-zA-Z0-9^(\w|-)+$]$">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="contraseñaregistro" placeholder="Contraseña"
+                                required="" minlength="6" pattern="^[a-zA-Z0-9^(\w|-)+$]$">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido"
+                                required="" minlength="6" maxlength="40" pattern="^[A-Za-z]+$" value="">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="dni" placeholder="DNI" required=""
+                                pattern="^[0-9]+$" min="1000000" max="99999999">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="domicilio" placeholder="Domicilio" required=""
+                                pattern="^[A-Za-z0-9'\.\-\s\,]+$">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="correo@electronico.com"
+                                required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" id="tel" placeholder="Cód.Área + Número de teléfono"
+                                required="" pattern="^[0-9]+$" minlength="12" maxlength="18">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary btn-sm">Registrarse</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
 
-        <!-- Información-->
-        <div class="row justify-content-center pt-5 border-top border-2">
-            <div class="col-12 col-sm-4">
-                <div class="card text-center bg-dark">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Dirección</h5>
-                        <p class="card-text text-white">111 Some Street, Córdoba, Argentina</p>                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card text-center bg-dark">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">E-mail</h5>
-                        <p class="card-text text-white"><a href="#!">hello@highsystem.com.ar</a></p>                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card text-center bg-dark">
-                    <div class="card-body">
-                        <h5 class="card-title text-light">Teléfono</h5>
-                        <p class="card-text text-white">+54 (362) 5555-5555</p>                       
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
@@ -96,12 +100,12 @@
         </div>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
-
 
 
 </html>
