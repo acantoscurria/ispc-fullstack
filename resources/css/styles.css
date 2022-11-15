@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(30, 6, 167);
+    background-color: transparent !important;
 }
 
 #menu a {
@@ -63,16 +63,13 @@ iconos {
 } 
 
 /* particulas */
-
 *       {
             margin: 0;
         }
 #particles-js{
-            position: absolute;
+            background-color: #201F1F;
+            position: fixed;
             width: 100%;
-            height: 70%;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: -10;
+            height: 100vh;
+            z-index: -1;
         }
