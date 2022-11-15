@@ -49,34 +49,34 @@
                     <div id=" titulo-formulario" class="text-center mb-4">
                         <h2 class="text-light pt-3">Registro</h2>
                     </div>
-                    <form action="">
+                    <form action="" id="form">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="usuarioregistro" placeholder="Usuario"
-                                required="" minlength="6" maxlength="12" pattern="^[a-zA-Z0-9^(\w|-)+$]$">
+                            <input type="text" class="form-control" id="usuarioregistro" placeholder="Usuario">
+                                <!-- required="" minlength="6" maxlength="12" pattern="^[a-zA-Z0-9^(\w|-)+$]$"> -->
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control" id="contraseñaregistro" placeholder="Contraseña"
-                                required="" minlength="6" pattern="^[a-zA-Z0-9^(\w|-)+$]$">
+                            <input type="password" class="form-control" id="contraseñaregistro" placeholder="Contraseña">
+                               <!--  required="" minlength="6" pattern="^[a-zA-Z0-9^(\w|-)+$]$"> -->
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido"
-                                required="" minlength="6" maxlength="40" pattern="^[A-Za-z]+$" value="">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+                            <!-- required="" minlength="6" maxlength="40" pattern="^[A-Za-z]+$" value=""> -->
                         </div>
                         <div class="mb-3">
-                            <input type="number" class="form-control" id="dni" placeholder="DNI" required=""
-                                pattern="^[0-9]+$" min="1000000" max="99999999">
+                            <input type="number" class="form-control" id="dni" placeholder="DNI"> <!-- required=""
+                                pattern="^[0-9]+$" min="1000000" max="99999999"> -->
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="domicilio" placeholder="Domicilio" required=""
-                                pattern="^[A-Za-z0-9'\.\-\s\,]+$">
+                            <input type="text" class="form-control" id="domicilio" placeholder="Domicilio"> <!-- required=""
+                                pattern="^[A-Za-z0-9'\.\-\s\,]+$"> -->
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="correo@electronico.com"
-                                required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <input type="text" class="form-control" id="email" placeholder="correo@electronico.com">
+                                <!-- required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"> -->
                         </div>
                         <div class="mb-3">
-                            <input type="tel" class="form-control" id="tel" placeholder="Cód.Área + Número de teléfono"
-                                required="" pattern="^[0-9]+$" minlength="12" maxlength="18">
+                            <input type="tel" class="form-control" id="tel" placeholder="Cód.Área + Número de teléfono">
+                                <!-- required="" pattern="^[0-9]+$" minlength="12" maxlength="18"> -->
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary btn-sm">Registrarse</button>
@@ -104,7 +104,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    
+
+    <!-- Fondo Particulas-->
+    <div id="particles-js"></div>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 
