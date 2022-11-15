@@ -8,6 +8,7 @@ const tel = document.getElementById("tel")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
+if(form){
 form.addEventListener("submit", e => {
   e.preventDefault()
   if (usuarioregistro.value.length < 1){
@@ -26,7 +27,7 @@ form.addEventListener("submit", e => {
     alert("El email no posee el formato correcto")
   }
 })
-
+}
 
 /*librería particulas*/
 
