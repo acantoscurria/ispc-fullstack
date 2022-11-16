@@ -1,5 +1,5 @@
 li>a::after {
-    content: "  |";
+    content: " |  ";
 }
 
 body {
@@ -11,10 +11,11 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #018fa8, #01073f);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 }
 
+h1{
+    font-family: 'Khula', sans-serif;
+}
 .texto-borde {
     -webkit-text-stroke: 0.25px rgb(192, 172, 172);
     color: transparent; 
@@ -31,7 +32,7 @@ body {
     color: #ebe9e9;
 }
 
-iconos {
+.iconos{
     font-size: 20px;
     padding: 0 8px;
 }
@@ -67,9 +68,13 @@ iconos {
             margin: 0;
         }
 #particles-js{
-            background-color: #201F1F;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(0, 0, 100) 50%, rgb(0, 0, 0) 100%);
             position: fixed;
             width: 100%;
             height: 100vh;
             z-index: -1;
-        }
+}
+.navbar{
+    font-size: 1.15rem;
+}
